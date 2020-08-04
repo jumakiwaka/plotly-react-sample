@@ -3,7 +3,6 @@ const cors = require("cors");
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const { RSA_NO_PADDING } = require("constants");
 const app = express();
 
 app.use(cors());
@@ -14,7 +13,7 @@ function readJsonFile() {
   return JSON.parse(data.toString());
 }
 
-app.get("/", (req, res) => {
+app.get("/data", (req, res) => {
   const data = readJsonFile();
   res.status(200).json({
     status: "success",
