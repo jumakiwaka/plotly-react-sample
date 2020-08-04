@@ -97,13 +97,6 @@ class App extends React.Component {
             <Col md="3" lg="3">
               {this.state.data && (
                 <>
-                  {/* <Dropdown
-              options={names}
-              onChange={this._onSelect}
-              value={names[0]}
-              placeholder="Select sample Id"
-              className="dropdown"
-            /> */}
                   <Jumbotron>
                     <label>
                       Test subject ID <br />
