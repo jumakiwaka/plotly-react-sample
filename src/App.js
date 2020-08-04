@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    const url = "https://react-plotly-sample.herokuapp.com/";
+    const url = "https://react-plotly-sample.herokuapp.com/data";
     const myHeaders = new Headers();
     // myHeaders.append('')
     const options = {
