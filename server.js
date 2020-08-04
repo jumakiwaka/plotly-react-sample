@@ -22,7 +22,8 @@ app.get("/data", (req, res) => {
 });
 
 const server = http.createServer(app);
+const PORT = process.env.PORT || 3001;
 
-server.listen(3001, () => {
+server.listen(PORT, () => {
   console.log("server started...");
 });
