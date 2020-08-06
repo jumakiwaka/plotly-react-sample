@@ -3,7 +3,7 @@ import { Col, Dropdown, Jumbotron } from "react-bootstrap";
 
 export default class MetaInfo extends Component {
   render() {
-    const { sampleId, names, currentMeta } = this.props;
+    const { sampleId, names, currentMeta, onSelect } = this.props;
     return (
       <>
         <Jumbotron>
@@ -19,7 +19,7 @@ export default class MetaInfo extends Component {
 
             <Dropdown.Menu className="dropdown">
               {names.map((id, index) => (
-                <Dropdown.Item onSelect={() => this._onSelect(id)} key={index}>
+                <Dropdown.Item onSelect={() => onSelect(id)} key={index}>
                   {id}
                 </Dropdown.Item>
               ))}

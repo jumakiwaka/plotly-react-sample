@@ -39,7 +39,7 @@ class App extends React.Component {
       });
   }
 
-  _onSelect = (value) => {
+  onSelect = (value) => {
     this.setState({
       sampleId: value,
     });
@@ -101,6 +101,7 @@ class App extends React.Component {
                   sampleId={sampleId}
                   currentMeta={currentMeta}
                   names={names}
+                  onSelect={this.onSelect}
                 />
               )}
             </Col>
