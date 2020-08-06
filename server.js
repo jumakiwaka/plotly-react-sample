@@ -7,6 +7,8 @@ const app = express();
 
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, "./build")));
+
 function readJsonFile() {
   const filename = path.join(__dirname, "samples.json");
   const data = fs.readFileSync(filename);
